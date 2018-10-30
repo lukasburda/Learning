@@ -1,2 +1,14 @@
 # Get all running pods in the namespace
 kubectl get pods --field-selector=status.phase=Running
+
+# Exposing deployment
+kubectl expose deployment <deployment> --type=LoadBalancer --port=8080
+
+# Visualized minikube pods
+minikube dashboard
+
+# Scale pods
+kubectl scale deploy <service> --replicas=<amount>
+
+# Delete completed or failed pod
+kubectl delete pod <pod_name>

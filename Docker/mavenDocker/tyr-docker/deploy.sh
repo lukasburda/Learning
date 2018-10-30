@@ -10,7 +10,7 @@ sudo docker rm tyr -f
 sudo docker build . -t tyr-wildfly
 
 # Run docker image
-sudo docker run -d -p 8080:8080 -p 9990:9990 -p 8787:8787 --name tyr tyr-wildfly
+sudo docker run -d -p 8080:8080 -p 9990:9990 --name tyr tyr-wildfly
 
 # Wait for wildfly and check logs
 sleep 5
