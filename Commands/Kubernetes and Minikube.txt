@@ -1,0 +1,2 @@
+# Get all running pods in the namespace
+kubectl get pods --field-selector=status.phase=Running
